@@ -45,7 +45,7 @@ sgdisk -d 1 /dev/sda
 sgdisk -N 1 /dev/sda
 partprobe /dev/sda
 
-mkfs.btrfs -F /dev/sda1 # wipes all data!
+mkfs.btrfs -f /dev/sda1 # wipes all data!
 
 mount /dev/sda1 /mnt
 
